@@ -1,0 +1,64 @@
+version: "2.0"
+
+stories:
+
+- story: about_xyz
+  steps:
+  - intent: about
+  - action: utter_about
+
+- story: protocol_xyz
+  steps:
+  - intent: protocol
+  - action: utter_protocol
+
+- story: open_source_xyz
+  steps:
+  - intent: open_source
+  - action: utter_open_source
+
+- story: email_register_xyz
+  steps:
+  - intent: email_register
+  - action: utter_email_register
+
+- story: number_register_xyz
+  steps:
+  - intent: number_register
+  - action: utter_number_register
+
+- story: start_meet_xyz
+  steps:
+  - intent: start_meet
+  - action: utter_start_meet
+
+- story: creat_room_xyz
+  steps:
+  - intent: creat_room
+  - action: utter_creat_room
+
+- story: update_room_xyz
+  steps:
+  - intent: update_room
+  - action: utter_update_room
+
+- story: delete_room_xyz
+  steps:
+  - intent: delete_room
+  - action: utter_delete_room
+
+- story: delete_ac_xyz
+  steps:
+  - intent: delete_ac
+  - action: utter_delete_ac
+
+- story: share_screen_xyz
+  steps:
+  - intent: share_screen
+  - action: utter_share_screen
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+

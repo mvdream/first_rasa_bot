@@ -1,0 +1,83 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- examples
+- about
+- open_source
+- protocol
+- email_register
+- number_register
+- start_meet
+- creat_room
+- update_room
+- delete_room
+- delete_ac
+- share_screen
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_about:
+  - text: OBMeet® was conceived and built by Emmanuel Gabriel, to be a service open
+      to all, to be community supported, and to respect the privacy of users. Our
+      mission is to build powerful communication messaging tools that break communication
+      barriers irrespective of different languages, accent or culture around the world.
+  utter_open_source:
+  - text: OBMeet® is a for-profit company that makes flagship products and services
+      built on the OBMeet.org Foundation, OBTranslate.org Foundation and other open
+      source libraries or components under license LGPL (GNU Lesser General Public
+      License).
+  utter_protocol:
+  - text: Messages are encrypted with an RSA key. Our cutting edge security Elliptic-curve
+      Diffie–Hellman (ECDHE) parameters are utilized with 256-bit and 2048-bit groups
+      alternatively; this improves security even further for some types of ciphers.
+      Likewise, OBMeet® has multiple security mechanics in place to keep data streams
+      very secure.
+  utter_email_register:
+  - text: Yes you can register with your email address, names and password, and will
+      allow you to reset your password if you forget it.
+  utter_number_register:
+  - text: No. Sorry!
+  utter_start_meet:
+  - text: Sign In with your email address and password.Click “Get Started” button.Sign
+      in using your login information or create a new account.Whilst login successfully,
+      by now you should be on “Home Room” dashboard.Click “Start” button to kick-off
+      your meeting.Test your audio and microphone.Use a headset to avoid causing background
+      noise for others.You’re set for your meeting.
+  utter_creat_room:
+  - text: Click “Create a Room +” on “Home Room” dashboard.Enter a desired room name.Generate
+      an optional room access code (An extra security check for guest)Click “create
+      room” button.Send out the meeting details, including the Meeting Access Code
+      and/or link.You’ve created a meeting!That’s it.
+  utter_update_room:
+  - text: Click the room name you intend to update.Click “settings” icon.Enter a desired
+      room name.You can generate a new access code (An extra security check for guest).Click
+      “update room” button.That’s it.
+  utter_delete_room:
+  - text: Click the room name you intend to delete.Click “trash” icon.Are you sure
+      you want to delete your meeting room?.If yes, click “delete this room” red button.That’s
+      it.
+  utter_delete_ac:
+  - text: Yes. If you choose to delete your account, it will NOT be recoverable. All
+      information regarding your account, including settings, rooms, and recording
+      will be removed.
+  utter_share_screen:
+  - text: Click the "Screen Sharing" icon.Your screen is now shared..
